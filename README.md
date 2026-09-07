@@ -4,6 +4,14 @@ Reproducible, isolated environment for building and running GnuCash
 (GUI, WebKit reports, AqBanking, Finance::Quote, Python bindings) on
 Apple silicon. Everything is pinned in `flake.nix` / `flake.lock`.
 
+**Status and disclaimer.** This is an independent, unofficial build of
+GnuCash for macOS; it is not produced, endorsed or supported by the GnuCash
+project — please don't report problems with it to them. It is provided as
+is, without warranty of any kind (see `LICENSE`), and you use it at your
+own risk: it has only been tested on the author's machine and books. Keep
+backups of your data files, and verify the results of any report before
+relying on them.
+
 ## The app (standard way)
 
 ```sh
