@@ -1,0 +1,9 @@
+# build outputs
+result*
+*.dmg
+__pycache__/
+# anything local (signing notes, identities, credentials) — never commit
+*.local
+*.local.*
+# your global git excludes ignore *.lock; the flake lock must be committed
+!flake.lock

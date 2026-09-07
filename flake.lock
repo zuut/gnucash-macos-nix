@@ -1,0 +1,45 @@
+{
+  "nodes": {
+    "gnucash-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1788573255,
+        "narHash": "sha256-GmLFuwwQ2ecPG6+xG4q65VepeAoMUpInJHX/smHulSg=",
+        "ref": "stable",
+        "rev": "17f1d581d46db04833ea2ea0ee896737b2418f17",
+        "revCount": 30535,
+        "type": "git",
+        "url": "file:../gnucash"
+      },
+      "original": {
+        "ref": "stable",
+        "type": "git",
+        "url": "file:../gnucash"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1788490200,
+        "narHash": "sha256-wX7GJ/pe7147AKZPfmVGIqFnEdlrnAJRhlhciaeKzWs=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "e5ead30d0824debba629dcf0720abeddee57b7d6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "e5ead30d0824debba629dcf0720abeddee57b7d6",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "gnucash-src": "gnucash-src",
+        "nixpkgs": "nixpkgs"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
