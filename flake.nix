@@ -405,6 +405,13 @@
           '';
           # The suite runs from the dev shell; the darwin sandbox lacks a HOME.
           doCheck = false;
+          # Guile 3 bytecode (.go) is ELF, and strip empties its
+          # .guile.arities.strtab while the arity records still point into
+          # it. Compiling anything that calls a GnuCash procedure then dies
+          # in bytevector-u8-ref and Guile falls back to interpreting the
+          # file. nixpkgs' guile sets dontStrip for the same reason
+          # (guile/3.0.nix); strip the native binaries, not the bytecode.
+          stripExclude = [ "*.go" ];
           # Same wrapper args as upstream minus its gnucash-docs dependency,
           # whose install step doesn't work on darwin (help docs only).
           preFixup = ''
